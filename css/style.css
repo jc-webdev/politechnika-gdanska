@@ -1,0 +1,18 @@
+.demo {
+  color: #002d70;
+}
+
+.demo__img {
+  width: 100%;
+}
+
+.demo__img--active {
+  color: bisque;
+}
+
+.content {
+  max-width: 1004px;
+  width: 100%;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=style.css.map */
