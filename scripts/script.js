@@ -17,22 +17,31 @@ openeResMenu.addEventListener('click', ()=>{
     document.querySelector('body').style.overflow = 'hidden'
 
 })
-let dimmer = document.querySelector('.dimmer')
 let modal = document.querySelector('.modal')
-const closeModal = document.querySelector('.close-modal')
-closeModal.addEventListener('click', ()=>{
+const dimmer = document.querySelector('.dimmer')
+const closeModal = document.querySelector('.close-modal') 
+const closeModalFunction = ()=>{
     let modalBoxContact = document.querySelector('.modal-box-contact')
     modalBoxContact.style.opacity = '0';
     dimmer.style.opacity = '0';
     setTimeout(()=>{
         modal.style.display = 'none'
     },300);
+    document.querySelector('body').style.overflow = ''
 
+}
+closeModal.addEventListener('click', ()=>{
+    closeModalFunction();
+})
+dimmer.addEventListener('click', ()=>{
+    closeModalFunction();
 })
 
 const openModal = document.querySelector('.open-modal')
 openModal.addEventListener('click', ()=>{
     let modalBoxContact = document.querySelector('.modal-box-contact')
+    document.querySelector('body').style.overflow = 'hidden'
+
     var opacity = 0; 
     modal.style.display = 'flex'
     var intervalID = setInterval(function() { 

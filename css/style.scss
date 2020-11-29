@@ -17,6 +17,33 @@ html {
     }
 }
 
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #939393;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+}
+
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    border: 0px none #ffffff;
+    // border-radius: 50px;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
 body {
     font-size: 16px;
     font-size: 1.6rem;
@@ -87,14 +114,18 @@ ul {
             overflow: auto;
         }
 
+
         .wrapper {
             max-width: 1004px;
             width: 100%;
             margin: 0 auto;
             position: relative;
+            display: flex;
+            flex-direction: column;
 
             .burger.close-modal {
                 display: flex;
+                align-self: flex-end;
                 height: 30px;
                 width: 30px;
                 flex-direction: column;
@@ -102,7 +133,7 @@ ul {
                 // margin: 1.2rem;
                 transition: 0.3s ease;
                 overflow: hidden;
-                position: absolute;
+                position: sticky;
                 top: 2rem;
                 right: 2rem;
                 padding: 3rem;
@@ -152,6 +183,7 @@ ul {
                 height: 100%;
                 box-sizing: border-box;
                 padding: 5rem 3rem;
+                margin: -60px 0 0 0;
 
                 .row {
                     margin-bottom: 2rem;
@@ -657,7 +689,11 @@ header {
 
                                 @media(max-width:700px) {
                                     width: 100%;
-                                    padding: 4% 0;
+
+                                    a {
+                                        padding: 4% 0;
+                                        box-sizing: border-box;
+                                    }
 
                                     &:hover {
                                         background-color: #1c66ba;
