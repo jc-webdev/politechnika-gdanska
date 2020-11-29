@@ -30,6 +30,12 @@ a {
     cursor: pointer;
 }
 
+button {
+    border: none;
+    background: unset;
+    padding: 0;
+}
+
 .content {
     max-width: 1004px;
     width: 100%;
@@ -993,12 +999,15 @@ footer {
                     padding: 0;
 
                     li {
-                        color: white;
-                        font-family: $ubuntu;
-                        font-size: 1.4rem;
-                        text-decoration: underline;
-                        margin-top: 1rem;
-                        cursor: pointer;
+                        button {
+
+                            color: white;
+                            font-family: $ubuntu;
+                            font-size: 1.4rem;
+                            text-decoration: underline;
+                            margin-top: 1rem;
+                            cursor: pointer;
+                        }
                     }
                 }
             }

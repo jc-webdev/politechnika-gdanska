@@ -33,6 +33,12 @@ a {
   cursor: pointer;
 }
 
+button {
+  border: none;
+  background: unset;
+  padding: 0;
+}
+
 .content {
   max-width: 1004px;
   width: 100%;
@@ -1270,7 +1276,7 @@ footer .content .row .footer-menu__list {
   padding: 0;
 }
 
-footer .content .row .footer-menu__list li {
+footer .content .row .footer-menu__list li button {
   color: white;
   font-family: "Ubuntu", sans-serif;
   font-size: 1.4rem;
