@@ -1,6 +1,7 @@
 $colors: (mainblue: #002d70,
-    blue:#16569E,
+    secondblue:#16569E,
 );
+
 
 @function color($cl-name) {
     @return map-get($colors, $cl-name)
